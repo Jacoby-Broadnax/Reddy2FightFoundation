@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>Reddy2Fight</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" sizes="192x192" href="Branding/Transparent%20Favicon%20192px.png">
+    <link rel="shortcut icon" href="Branding/Transparent%20Favicon%20192px.png" />
+    <link rel="apple-touch-icon-precomposed" href="Branding/Favicon192px.png" />
+    <link rel="apple-touch-startup-image" href="Branding/Favicon192px.png">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Reddy2Fight’s mission is to inspire, love,encourage and support children & their families
+during their fight against cancer and other
+life-threatening illnesses.">
+    <link rel="stylesheet" href="vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <img class="logo" src="Branding/NoPath.png">
+        </div>
+
+        <nav class="nav vivify">
+            <ul>
+                <li class="nav-item"><a href="#"><button autofocus>Home</button></a></li>
+                <li class="nav-item"><a href="#"><button>Ways To Help</button></a></li>
+                <li class="nav-item"><a href="#"><button>Inspiration</button></a></li>
+                <li class="nav-item"><a href="#"><button>Our Team</button></a></li>
+                <li class="nav-item"><a href="#"><button>Care Packages</button></a></li>
+                <li class="nav-item"><a href="#"><button>Contact</button></a></li>
+            </ul>
+
+        </nav>
+        <button class="close-base" onclick="collapse()"></button>
+        <a href="#"><button class="donate-btn">Donate</button></a>
+        <div class="mobile">
+            <button class="menu" onclick="expand()">
+                <i class="material-icons">menu</i>
+            </button>
+
+            <button class="close" onclick="collapse()">
+                <i class="material-icons">close</i>
+            </button>
+        </div>
+
+        <div class="social-icons"><a href=""><img src="IconSet/TwitterLogo.svg"></a><a href="#"><img src="IconSet/InstagramLogo.svg"></a><a href="#"><img src="IconSet/FacebookLogo.svg"></a></div>
+    </header>
+
+
+    <div id="slideshow">
+
+        <div>
+            <div class="slide-text">
+                <h2>Our Mission</h2>
+                <p>Reddy2Fight’s mission is to inspire, love, encourage and support children & their families during their fight against cancer and other life-threatening illnesses</p>
+            </div>
+
+            <img src="Slides/Slide%201%20-%20Our%20Mission.jpg">
+        </div>
+
+        <div>
+            <div class="slide-text">
+                <h2>Care Packages</h2>
+                <p>These care packages will put smiles on the beautiful faces of many children fighting childhood cancer and other life threatening illnesses.</p>
+            </div>
+
+            <img src="Slides/Slide%202%20-%20Care%20Packages.jpg">
+        </div>
+        <div>
+            <div class="slide-text">
+                <h2>Donations</h2>
+                <p>Your donation goes directly to the creation of care packages and goody bags, and their delivery to hospitals.</p>
+            </div>
+
+            <img src="Slides/Slide%203%20-%20Donations.jpg">
+        </div>
+
+    </div>
+
+
+
+    <div class="info-section">
+        <div class="sect-wrapper">
+            <div class="section"><i class="material-icons icons">payment</i>
+                <h3>Give By Check</h3>
+                <p>Reddy2Fight Foundation
+                    3111 Via Dolce
+                    Suite 406
+                    Marina Del Rey, CA 90292</p>
+            </div>
+
+            <div class="section"><i class="material-icons icons">favorite_outline</i>
+                <h3>Give By Check</h3>
+                <p>Reddy2Fight Foundation
+                    To discuss other ways you can assist in fundraising & donations, please contact our team at
+            </div>
+
+            <div class="section exc"><i class="material-icons icons">help_outline</i>
+                <h3>Give By Check</h3>
+                <p>Reddy2Fight Foundation
+                    Please know that your contributions are going directly towards the creation and delivery of care packages that will put smiles on the beautiful faces of many children fighting childhood cancer and other life threatening illnesses.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 6000);
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
