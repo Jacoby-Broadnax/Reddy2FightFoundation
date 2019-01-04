@@ -197,8 +197,10 @@ header {
 
 /* -------------------------Info Section----------------------*/
 
+
+
 .info-section {
-    display: none;
+
     width: 100%;
     margin-top: 597px;
 }
@@ -210,7 +212,7 @@ header {
 
 .sect-wrapper {
     margin: auto;
-    width: 1332px;
+    width: 1400px;
 }
 
 .icons {
@@ -223,6 +225,7 @@ header {
     margin-left: 129px;
     font-family: roboto, sans-serif;
     margin-top: 140px;
+    transition: 0.3s ease;
 }
 
 .section > i {
@@ -265,6 +268,21 @@ header {
         border-radius: 36px;
     }
 }
+
+@media screen and (max-width:1450px) {
+    .section {
+        margin-left: 72px;
+    }
+
+    .exc2 {
+        margin-left: 0px;
+    }
+
+    .sect-wrapper {
+        width: 1076px;
+    }
+}
+
 
 @media screen and (max-width:1350px) {
     nav {
@@ -349,6 +367,23 @@ header {
     }
 }
 
+@media screen and (max-width:1200px) {
+    .sect-wrapper {
+        width: 541px;
+    }
+
+    .section {
+        width: 399px;
+        margin-top: 53px;
+    }
+
+    .exc2 {
+        margin-left: 72px;
+        margin-top: 50px;
+    }
+}
+
+
 @media screen and (max-width:1000px) {
     #slideshow > div > img {
         height: 423px;
@@ -368,6 +403,10 @@ header {
     .slide-text {
         width: 475px;
         margin-top: 212px
+    }
+
+    .exc2 {
+        margin-top: -103px;
     }
 }
 
@@ -391,6 +430,27 @@ header {
 
     .slide-text > h2 {
         width: 270px;
+    }
+
+    .sect-wrapper {
+        width: 336px;
+        margin-top: -270px;
+    }
+
+    .section {
+        width: 336px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .exc2 {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .section > h3 {
+        font-size: 17px;
+        margin-top: 20px;
     }
 
 
