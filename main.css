@@ -29,6 +29,8 @@ li {
     width: 188px;
     float: left;
     margin-left: 53px;
+    margin-top: -2px;
+    padding-bottom: 4px;
 
 }
 
@@ -307,7 +309,7 @@ header {
 
     .logo-wrapper {
         margin: auto;
-        width: 311px;
+        width: 262px;
     }
 
     nav {
@@ -372,6 +374,24 @@ header {
 @media screen and (max-width:502px) {
     #slideshow > div > img {
         height: 285px;
-        width: 149%;
+        width: 100%;
     }
+
+
+
+    .slide-text {
+        width: 270px;
+        margin-top: 125px;
+    }
+
+    .slide-text > p {
+        width: 270px;
+        font-size: 17px;
+    }
+
+    .slide-text > h2 {
+        width: 270px;
+    }
+
+
 }
