@@ -88,7 +88,7 @@ header {
     border: none;
     background-color: #095AA5;
     color: white;
-    transition: 0.5s ease;
+    transition: 0.5s linear;
     margin-right: 68px;
     margin-top: -2px;
 }
@@ -206,7 +206,8 @@ header {
 }
 
 .info-section {
-    height: 45vh;
+    height: 412px;
+    ;
 
 }
 
@@ -246,11 +247,76 @@ header {
     float: right;
     height: 73px;
     color: #A3A3A3;
+    line-height: 24px;
 }
 
 .exc {
     width: 432px;
 }
+
+
+
+
+
+
+
+
+
+/* -------------------------Goal Section----------------------*/
+
+
+
+.goal-section {
+    background-image: url(Images/Our%20Goal.jpg);
+
+    height: 425px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 300px;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.goal-text {
+
+
+    margin: auto;
+    width: 648px;
+    margin-top: 74px;
+
+}
+
+.goal-text > h3 {
+    font-size: 48px;
+    font-family: roboto, sans-serif;
+    color: white;
+    font-weight: normal;
+    margin-bottom: -19px;
+    margin-top: 10px;
+
+}
+
+.goal-text > p {
+    font-size: 24px;
+    font-family: roboto, sans-serif;
+    width: 879px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -281,6 +347,8 @@ header {
     .sect-wrapper {
         width: 1076px;
     }
+
+
 }
 
 
@@ -328,6 +396,10 @@ header {
     .logo-wrapper {
         margin: auto;
         width: 262px;
+    }
+
+    .goal-section {
+        background-image: url(Images/Goal%20Minified.jpg);
     }
 
     nav {
@@ -381,6 +453,26 @@ header {
         margin-left: 72px;
         margin-top: 50px;
     }
+
+    .goal-section {
+        margin-top: 265px;
+        background-position: -144px;
+        background-color: #00539C;
+
+    }
+
+    .goal-text {
+        width: 498px;
+    }
+
+    .goal-text > h3 {
+        font-size: 45px;
+    }
+
+    .goal-text > p {
+        width: 500px;
+        font-size: 20px;
+    }
 }
 
 
@@ -408,19 +500,43 @@ header {
     .exc2 {
         margin-top: -103px;
     }
+
+    .goal-section {
+        margin-top: 115px;
+    }
 }
 
 @media screen and (max-width:502px) {
     #slideshow > div > img {
-        height: 285px;
+        height: 330px;
         width: 100%;
     }
 
 
 
+    .goal-section {
+        margin-top: 56px;
+        background-position: -275px;
+        ;
+    }
+
+    .goal-text {
+        width: 341px;
+        margin-top: 62px;
+    }
+
+    .goal-text > p {
+        width: 340px;
+        font-size: 17px;
+    }
+
+    .goal-text > h3 {
+        font-size: 36px;
+    }
+
     .slide-text {
         width: 270px;
-        margin-top: 125px;
+        margin-top: 152px;
     }
 
     .slide-text > p {
@@ -432,15 +548,19 @@ header {
         width: 270px;
     }
 
+    .info-section {
+        margin-top: 659px;
+    }
+
     .sect-wrapper {
         width: 336px;
-        margin-top: -270px;
+        margin-top: -286px;
     }
 
     .section {
         width: 336px;
         margin-left: 0px;
-        margin-top: 0px;
+        margin-top: -29px;
     }
 
     .exc2 {
