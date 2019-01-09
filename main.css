@@ -211,7 +211,7 @@ header {
 
 .info-section {
     height: 412px;
-    ;
+
 
 }
 
@@ -276,7 +276,7 @@ header {
     height: 425px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 300px;
+    margin-bottom: 217px;
     margin-top: 10px;
     position: absolute;
     width: 100%;
@@ -316,8 +316,31 @@ header {
 
 
 
+/*-----------------------Footer---------------------------*/
 
+footer {
+    background-color: #EEEEEE;
 
+    width: 100%;
+    margin-top: 554px;
+    position: relative;
+    padding-bottom: 0px;
+
+}
+
+footer > h3 {
+    text-align: center;
+    color: #707070;
+    font-family: roboto, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    padding-right: 50px;
+    padding-top: 41px;
+    padding-left: 50px;
+    padding-bottom: 41px;
+    margin: 0px;
+
+}
 
 
 
@@ -337,6 +360,11 @@ header {
         padding-bottom: 7px;
         border-radius: 36px;
         box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.22);
+        z-index: 50;
+    }
+
+    footer {
+        margin-bottom: 50px;
     }
 }
 
@@ -363,7 +391,7 @@ header {
     }
 
     .donate-btn {
-        position: fixed;
+        position: absolute;
         width: 100%;
         left: 0px;
         border-radius: 0px;
@@ -473,14 +501,14 @@ header {
         margin-top: 265px;
         background-position: -144px;
         background-color: #00539C;
-
+        margin-bottom: 0px;
     }
 
     .goal-text {
         width: 498px;
     }
 
-    .goal-text > h3 {
+    .goal-text > h3s {
         font-size: 45px;
     }
 
@@ -488,12 +516,21 @@ header {
         width: 500px;
         font-size: 20px;
     }
+
+    footer {
+        margin-top: 766px;
+    }
 }
 
 
 @media screen and (max-width:1000px) {
     #slideshow > div > img {
         height: 423px;
+    }
+
+    footer {
+        margin-top: 605px;
+        margin-bottom: 52px;
     }
 
     .slide-text > h2 {
@@ -527,26 +564,32 @@ header {
         width: 100%;
     }
 
-
+    footer {
+        margin-top: 823px;
+        margin-bottom: 50px;
+    }
 
     .goal-section {
-        margin-top: 56px;
+        margin-top: 74px;
         background-position: -275px;
-        ;
+
     }
 
     .goal-text {
-        width: 341px;
-        margin-top: 62px;
+        width: 314px;
+        margin-top: 367px;
+
     }
 
     .goal-text > p {
-        width: 340px;
+        width: 329px;
         font-size: 17px;
+        color: #707070;
     }
 
     .goal-text > h3 {
         font-size: 36px;
+        margin-bottom: 29px;
     }
 
     .slide-text {
@@ -581,6 +624,10 @@ header {
     .exc2 {
         margin-left: 0px;
         margin-top: 0px;
+    }
+
+    .exc {
+        margin-top: -2px;
     }
 
     .section > h3 {
