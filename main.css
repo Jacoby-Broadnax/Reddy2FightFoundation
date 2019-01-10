@@ -71,7 +71,7 @@ header {
     transition: 0.3s ease;
     width: 104px;
     height: 39px;
-
+font-size: 13px;
 }
 
 .nav-item > a > button:hover {
@@ -95,7 +95,10 @@ header {
     transition: 0.5s linear;
     margin-right: 68px;
     margin-top: -2px;
+	font-size: 13px;
 }
+
+.donate-btn:focus {outline: none;}
 
 .donate-btn:hover {
     background-color: white;
@@ -169,14 +172,15 @@ header {
     z-index: 12;
 
     font-size: 48px;
-    font-weight: normal;
+    font-weight: lighter;
     font-family: roboto, sans-serif;
     color: white;
     font-weight: 450;
     text-align: center;
     ;
-    width: 656px;
-    margin-top: -18px
+    
+    margin-top: -18px;
+	width: 904px;
 }
 
 .slide-text > p {
@@ -188,13 +192,14 @@ header {
     font-family: roboto, sans-serif;
     text-align: center;
     margin-top: 45px;
-    width: 664px;
-
+    width: 904px;
+font-weight: lighter;
+	
 }
 
 .slide-text {
     margin: auto;
-    width: 656px;
+    width: 904px;
     margin-top: 243px;
 
 }
@@ -244,7 +249,8 @@ header {
     margin-left: 13px;
     margin-bottom: 0px;
     font-weight: normal;
-    color: #095AA5
+    color: #095AA5;
+	font-weight: lighter;
 }
 
 .section > p {
@@ -252,6 +258,8 @@ header {
     height: 73px;
     color: #A3A3A3;
     line-height: 24px;
+	font-size: 14px;
+	font-weight: lighter;
 }
 
 .exc {
@@ -306,7 +314,7 @@ header {
     font-family: roboto, sans-serif;
     width: 879px;
     color: white;
-
+	font-weight: lighter;
 }
 
 
@@ -396,7 +404,7 @@ footer > h3 {
         left: 0px;
         border-radius: 0px;
         top: 77px;
-        z-index: 0;
+        z-index: 50;
     }
 
     .mobile {
@@ -444,7 +452,7 @@ footer > h3 {
         position: fixed;
         right: 0px;
         background-color: white;
-        top: -10px;
+        top: 0px;
         z-index: 20;
         height: 102%;
         box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.22);
@@ -470,7 +478,7 @@ footer > h3 {
         padding-left: 0px;
         margin: auto;
         width: 181px;
-        margin-top: 60px;
+        margin-top: 110px;
     }
 
     .nav-item > a > button {
@@ -489,16 +497,18 @@ footer > h3 {
 
     .section {
         width: 399px;
-        margin-top: 53px;
+        margin-top: 23px;
+		
     }
 
     .exc2 {
         margin-left: 72px;
         margin-top: 50px;
+		margin-bottom: -30px;
     }
 
     .goal-section {
-        margin-top: 265px;
+        margin-top: 185px;
         background-position: -144px;
         background-color: #00539C;
         margin-bottom: 0px;
@@ -508,7 +518,7 @@ footer > h3 {
         width: 498px;
     }
 
-    .goal-text > h3s {
+    .goal-text > h3 {
         font-size: 45px;
     }
 
@@ -554,7 +564,7 @@ footer > h3 {
     }
 
     .goal-section {
-        margin-top: 115px;
+        margin-top: 45px;
     }
 }
 
