@@ -71,7 +71,7 @@ header {
     transition: 0.3s ease;
     width: 104px;
     height: 39px;
-font-size: 13px;
+    font-size: 13px;
 }
 
 .nav-item > a > button:hover {
@@ -95,10 +95,12 @@ font-size: 13px;
     transition: 0.5s linear;
     margin-right: 68px;
     margin-top: -2px;
-	font-size: 13px;
+    font-size: 13px;
 }
 
-.donate-btn:focus {outline: none;}
+.donate-btn:focus {
+    outline: none;
+}
 
 .donate-btn:hover {
     background-color: white;
@@ -118,8 +120,11 @@ font-size: 13px;
     z-index: 50;
 }
 
+
+
 .menu:focus {
     outline: none;
+
 }
 
 .close {
@@ -178,9 +183,9 @@ font-size: 13px;
     font-weight: 450;
     text-align: center;
     ;
-    
+
     margin-top: -18px;
-	width: 904px;
+    width: 904px;
 }
 
 .slide-text > p {
@@ -193,8 +198,8 @@ font-size: 13px;
     text-align: center;
     margin-top: 45px;
     width: 904px;
-font-weight: lighter;
-	
+    font-weight: lighter;
+
 }
 
 .slide-text {
@@ -202,6 +207,11 @@ font-weight: lighter;
     width: 904px;
     margin-top: 243px;
 
+}
+
+.slide-text > button {
+    position: relative;
+    z-index: 10;
 }
 
 /* -------------------------Info Section----------------------*/
@@ -250,7 +260,7 @@ font-weight: lighter;
     margin-bottom: 0px;
     font-weight: normal;
     color: #095AA5;
-	font-weight: lighter;
+    font-weight: lighter;
 }
 
 .section > p {
@@ -258,8 +268,8 @@ font-weight: lighter;
     height: 73px;
     color: #A3A3A3;
     line-height: 24px;
-	font-size: 14px;
-	font-weight: lighter;
+    font-size: 14px;
+    font-weight: lighter;
 }
 
 .exc {
@@ -314,7 +324,7 @@ font-weight: lighter;
     font-family: roboto, sans-serif;
     width: 879px;
     color: white;
-	font-weight: lighter;
+    font-weight: lighter;
 }
 
 
@@ -498,13 +508,13 @@ footer > h3 {
     .section {
         width: 399px;
         margin-top: 23px;
-		
+
     }
 
     .exc2 {
         margin-left: 72px;
         margin-top: 50px;
-		margin-bottom: -30px;
+        margin-bottom: -30px;
     }
 
     .goal-section {
@@ -529,6 +539,10 @@ footer > h3 {
 
     footer {
         margin-top: 766px;
+    }
+
+    .section > p {
+        font-weight: normal
     }
 }
 
