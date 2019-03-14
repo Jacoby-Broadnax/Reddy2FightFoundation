@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: roboto, sans-serif;
 }
 
 ul {
@@ -11,10 +12,29 @@ li {
     list-style-type: none;
 }
 
+details summary::-webkit-details-marker {
+  display:none;
+}
+
 a {
     text-decoration: none;
     color: #095AA5;
 }
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Indira;
+    src: url(Branding/indira_k.ttf);
+}
+
+.divider {width: 100%;height: 1.2px; background-color: #A8A8A8;opacity: 0.4}
 
 /* ----------------------Navigation---------------------------*/
 
@@ -26,7 +46,7 @@ a {
 
 .social-icons {
     float: right;
-    margin-right: 10px;
+    margin-right: -150px;
 }
 
 .logo {
@@ -35,8 +55,10 @@ a {
     margin-left: 53px;
     margin-top: -2px;
     padding-bottom: 4px;
-
+transition: 0.5s ease;
 }
+
+
 
 header {
     width: 100%;
@@ -67,36 +89,44 @@ header {
     margin-left: 44px;
     margin-top: -1px;
 
-    border-radius: 90px;
+   
     transition: 0.3s ease;
     width: 104px;
     height: 39px;
     font-size: 13px;
 }
 
+
+
 .nav-item > a > button:hover {
-    background-color: lightgray;
+    background-color: #095AA5;
+    color: white;
     cursor: pointer;
+    font-size: 15px;
+    border-radius: 50px;
 }
 
-.nav-item > a > button:focus {
-    color: #095AA5;
-    outline: none;
-}
 
 .donate-btn {
     float: right;
-    width: 148px;
-    height: 39px;
+   
     border-radius: 90px;
     border: none;
     background-color: #095AA5;
     color: white;
-    transition: 0.5s linear;
+    transition: 0.5s ease;
     margin-right: 68px;
     margin-top: -2px;
     font-size: 13px;
+	padding: 12px 45px 12px 45px
 }
+
+.donate-btn:active {background-color: white;}
+
+.donate-menu {width: 360px;float: right;}
+
+.button-active{background-color:#095AA5}
+
 
 .donate-btn:focus {
     outline: none;
@@ -109,6 +139,7 @@ header {
     border-width: 1.5px;
     border-color: #095AA5;
     cursor: pointer;
+    
 }
 
 .menu {
@@ -156,6 +187,28 @@ header {
     left: 0px;
     width: 100%;
     top: 27px;
+
+}
+
+video {
+    position: relative;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    background: transparent url(video-bg.jpg) no-repeat;
+    background-size: cover;
+    filter: brightness(0.85)
+}
+
+.video-container {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+
 }
 
 #slideshow > div > img {
@@ -221,7 +274,7 @@ header {
 .info-section {
 
     width: 100%;
-    margin-top: 597px;
+    margin-top: 571px;
 }
 
 .info-section {
@@ -246,6 +299,7 @@ header {
     font-family: roboto, sans-serif;
     margin-top: 140px;
     transition: 0.3s ease;
+
 }
 
 .section > i {
@@ -264,7 +318,7 @@ header {
 }
 
 .section > p {
-    float: right;
+    float: left;
     height: 73px;
     color: #A3A3A3;
     line-height: 24px;
@@ -281,11 +335,23 @@ header {
 
 
 
+/* ------------------------Inspiration----------------------*/
+
+.inspiration {height: 100vh;margin: auto; width: 1690px;}
+
+.inspiration > img {height: 100vh; object-fit: cover;width: 840px;float: left;}
+.inspiration-text {float: left; margin-top: 80px;width: 750px;margin-left: 60px;}
+.inspiration-text > h1 {font-size: 45px;font-weight:normal;color:#272727;}
+.inspiration-text > h3 {font-size:20px; font-weight: normal;color: #747474;margin-top: -40px;}
+.inspiration-text > p {font-size: 18px;line-height: 40px;color:#272727;}
+.liam-inline {display: none;float: left;margin-top: 40px;width: 100%;height: 400px;;object-fit: cover;border-radius: 15px;margin-bottom: 20px;}
+
+
+
 
 
 
 /* -------------------------Goal Section----------------------*/
-
 
 
 .goal-section {
@@ -295,8 +361,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 217px;
-    margin-top: 10px;
-    position: absolute;
+    margin-top: -60px;
+  position: relative;
     width: 100%;
 }
 
@@ -306,7 +372,8 @@ header {
     margin: auto;
     width: 648px;
     margin-top: 74px;
-
+position: relative;
+	padding-top: 30px;
 }
 
 .goal-text > h3 {
@@ -315,7 +382,7 @@ header {
     color: white;
     font-weight: normal;
     margin-bottom: -19px;
-    margin-top: 10px;
+   
 
 }
 
@@ -337,28 +404,195 @@ header {
 /*-----------------------Footer---------------------------*/
 
 footer {
-    background-color: #EEEEEE;
-
-    width: 100%;
-    margin-top: 554px;
-    position: relative;
-    padding-bottom: 0px;
-
+height: 150px;
+	background-color: #F7F7F7;
+width: 100%; 
+	
 }
 
 footer > h3 {
     text-align: center;
-    color: #707070;
+    color: #ffffff;;
     font-family: roboto, sans-serif;
     font-weight: normal;
     font-size: 15px;
-    padding-right: 50px;
-    padding-top: 41px;
-    padding-left: 50px;
-    padding-bottom: 41px;
-    margin: 0px;
+padding-top: 70px;
+  color: #494949
 
 }
+
+
+
+
+
+
+
+
+
+/* -------------------------Donation---------------------*/
+
+.donate-header {
+    width: 100%;
+    height: 350px;
+
+
+
+    ;
+}
+
+
+
+.privacy-policy {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    background-color: white;
+    box-shadow: 1px 3px 12px 0px rgba(0, 0, 0, 0.34);
+    width: 459px;
+    border-radius: 0px;
+    display: none;
+}
+
+.privacy-policy > h3 {
+    text-align: center;
+    font-weight: normal;
+    ;
+    font-size: 20px;
+}
+
+.privacy-policy > p {
+    margin: auto;
+    text-align: center;
+    padding: 13px;
+    line-height: 29px;
+    padding-top: 1px;
+    font-size: 14px;
+    width: 379px;
+}
+
+.privacy-policy > button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+}
+
+.privacy-policy > button:hover {
+    cursor: pointer;
+}
+
+.policy-spanner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.64);
+    z-index: 10;
+    top: 0px;
+    filter: blur(50px;
+    );
+    display: none;
+
+}
+
+.donate-header > h1 {
+    font-size: 50px;
+    position: relative;
+    margin: auto;
+    width: 385px;
+    margin-top: 247px;
+    font-weight: normal;
+    font-family: roboto, sans-serif;
+    color: white;
+
+}
+
+
+.donate-header > img {
+    width: 100%;
+    object-fit: cover;
+    height: 396px;
+    margin-top: 76px;
+    filter: brightness(0.8);
+    position: absolute;
+    top: 0px;
+}
+
+
+.donate-text > h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #00274B;
+margin-left:40px;
+}
+
+.donate-text > p {
+    font-size: 15px;
+    font-weight: normal;
+    color: #707070;
+margin-left:40px; 
+}
+
+.donate-prices {margin: auto; width: 350px;}
+
+.donate-prices > a > button {
+    font-size: 14px;
+    width: 100%;;
+    height: 39px;
+    border: none;
+   background-color: white;
+    color: #095AA5;
+  
+    transition: 0.3s ease;
+	margin-top: 10px;
+}
+
+.donate-prices > a > button:hover {
+  
+background-color: #095AA5;
+color: white;
+font-size: 16;
+cursor: pointer;
+border-radius: 50px;
+}
+
+
+
+.paypal-logo {
+    width: 83px;
+    float: right;
+    margin-top: -38px;
+	margin-right:40px; 
+}
+
+
+.donate-sect {
+    position: fixed;right: 30px;
+    top: 100px;
+    width: 410px;
+ height: 490px;
+	background-color:white;
+	border-radius: 15px;
+	 box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.22);
+}
+
+.donate-policy {
+    margin: auto;
+    width: 187px;
+    margin-top: 29px;
+}
+
+.donate-policy > button {
+    background-color: white;
+    border: none;
+}
+
+.donate-policy > button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 
@@ -367,23 +601,13 @@ footer > h3 {
 
 /* -------------------------Media Queries---------------------*/
 
+@media screen and (max-width:1750px) {.inspiration > img {width: 590px;}.inspiration-text {width: 600px;}.inspiration {width: 1290px;}}
+
 @media screen and (max-width:1500px) {
     .social-icons {
-        position: fixed;
-        left: 24px;
-        bottom: 25px;
-        background-color: white;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 7px;
-        border-radius: 36px;
-        box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.22);
-        z-index: 50;
+       display: none
     }
 
-    footer {
-        margin-bottom: 50px;
-    }
 }
 
 @media screen and (max-width:1450px) {
@@ -403,18 +627,30 @@ footer > h3 {
 }
 
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1220px) {
     nav {
         display: none;
     }
+	
+	.inspiration-text {margin-left:30px;width:475px;}
+	.inspiration {width:475px; } 
+
 
     .donate-btn {
-        position: absolute;
-        width: 100%;
-        left: 0px;
+       
+       
+       
         border-radius: 0px;
-        top: 77px;
+       float: none;
         z-index: 50;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		border-radius: 150px;
+		box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.22);
+		 position: fixed;
+    left: 50%;
+  bottom: 0px;
+    transform: translate(-50%, -50%);
     }
 
     .mobile {
@@ -427,7 +663,7 @@ footer > h3 {
 
         float: none;
         width: 157px;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
 
     }
 
@@ -498,6 +734,10 @@ footer > h3 {
         text-align: center;
         width: 100%;
     }
+	
+	.inspiration > img {height: 570px;margin-bottom: -100px;border-radius: 12px;margin-top: 100px;}
+  
+	.inspiration {width: 570px;}
 }
 
 @media screen and (max-width:1200px) {
@@ -511,39 +751,20 @@ footer > h3 {
 
     }
 
+
+
     .exc2 {
         margin-left: 72px;
         margin-top: 50px;
         margin-bottom: -30px;
     }
 
-    .goal-section {
-        margin-top: 185px;
-        background-position: -144px;
-        background-color: #00539C;
-        margin-bottom: 0px;
-    }
-
-    .goal-text {
-        width: 498px;
-    }
-
-    .goal-text > h3 {
-        font-size: 45px;
-    }
-
-    .goal-text > p {
-        width: 500px;
-        font-size: 20px;
-    }
-
-    footer {
-        margin-top: 766px;
-    }
-
+   
+	
     .section > p {
         font-weight: normal
     }
+	.goal-section {margin-top:125px; }
 }
 
 
@@ -552,10 +773,19 @@ footer > h3 {
         height: 423px;
     }
 
-    footer {
-        margin-top: 605px;
-        margin-bottom: 52px;
+    .video-container {
+        height: 435px;
     }
+	.inspiration {margin: auto; width: 500px;}
+
+
+	 .inspiration-text > p {font-size: 17px;line-height: 33px}
+	.liam-inline {display: block;}
+	.liam-scale {display: none;}
+	
+	.inspiration {margin-top: -15px;}
+
+
 
     .slide-text > h2 {
         font-size: 32px;
@@ -577,10 +807,30 @@ footer > h3 {
         margin-top: -103px;
     }
 
-    .goal-section {
-        margin-top: 45px;
+ .goal-section {
+        margin-top: -100px;
+        background-position: -144px;
+        background-color: #00539C;
+        margin-bottom: 0px;
+    }
+
+    .goal-text {
+        width: 498px;
+    }
+
+    .goal-text > h3 {
+        font-size: 45px;
+    }
+
+    .goal-text > p {
+        width: 500px;
+        font-size: 20px;
     }
 }
+
+@media screen and (max-width:800px){.inspiration-text {width: 343px;} .inspiration {width: 343px;margin-top: -10px;} .inspiration-text > h1 {font-size: 30px;margin-bottom: 42px;}.inspiration-text > h3 {font-size: 20px; }.inspiration-text {margin-left: 0px;}}
+
+@media screen and (max-width:700px) {}
 
 @media screen and (max-width:502px) {
     #slideshow > div > img {
@@ -588,27 +838,28 @@ footer > h3 {
         width: 100%;
     }
 
-    footer {
-        margin-top: 823px;
-        margin-bottom: 50px;
+    .video-container {
+        height: 348px;
     }
 
+
+
     .goal-section {
-        margin-top: 74px;
+        margin-top: -50px;
         background-position: -275px;
 
     }
 
     .goal-text {
         width: 314px;
-        margin-top: 367px;
+     
 
     }
 
     .goal-text > p {
         width: 329px;
         font-size: 17px;
-        color: #707070;
+       
     }
 
     .goal-text > h3 {

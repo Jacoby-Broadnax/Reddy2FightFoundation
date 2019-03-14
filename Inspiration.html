@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Reddy2Fight - Inspiration</title>
+    <title>Reddy2Fight</title>
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" sizes="192x192" href="Branding/Transparent%20Favicon%20192px.png">
     <link rel="shortcut icon" href="Branding/Transparent%20Favicon%20192px.png" />
@@ -9,106 +9,110 @@
     <link rel="apple-touch-startup-image" href="Branding/Favicon192px.png">
     <link rel="stylesheet" href="main.css" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <meta name="theme-color" content="#ffffff" />
     <meta charset="utf-8" />
     <meta name="description" content="Reddy2Fight’s mission is to inspire, love,encourage and support children & their families
 during their fight against cancer and other
 life-threatening illnesses.">
-    <link rel="stylesheet" href="vivify.min.css"> </head>
-
+    <link rel="stylesheet" href="vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
 
 <body>
 
-
-    <div class="headerbase"></div>
-
-    <div class="header" style="left: -0.2%;">
-        <a href="index.html">
-            <div class="logo"><img class="logosource" src="Branding/NoPath.png" width="276.36" style="position: fixed"></div>
-        </a>
-
-        <a href="Hamburger-Menu.html">
-            <div class="hamburgermenu vivify popInRight"></div>
-        </a>
-
-
-        <div>
-            <a href="index.html">
-                <h3 class="headerbtn" style="padding-left: 46px; padding-right: 46px; left: 387px; color: #707070">Home</h3>
-            </a>
-        </div>
-
-        <div>
-            <a href="index.html">
-                <h3 class="headerbtn" style=" color:#707070;padding-left: 14px; padding-right: 14px; left: 526px;;">Ways To Help</h3>
-            </a>
-        </div>
-
-        <div>
-            <a href="Inspiration.html">
-                <h3 class="headerbtn" style=" color:#707070;padding-left: 28.5px; padding-right: 28.5px; left: 663px; color: #095AA5">Inspiration</h3>
-            </a>
-        </div>
-
-        <div>
-            <a href="index.html">
-                <h3 class="headerbtn" style=" color: #707070; padding-right:48; padding-left: 48; left: 802px ">Team</h3>
-            </a>
-        </div>
-
-        <div>
-            <a href="index.html">
-                <h3 class="headerbtn" style=" color: #707070; padding-right: 8.5; padding-left: 8.5; left: 942px">Care Packages</h3>
-            </a>
-        </div>
-
-        <div>
-            <a href="index.html">
-                <h3 class="headerbtn" style=" color: #707070; padding-left: 39px; padding-right: 39px; left: 1081">Contact</h3>
-            </a>
-        </div>
-
-        <div class="inspiration">
-            <div class="Liam vivify fadeIn"></div>
-
-            <h3 class="inspirationheader">Inspiration <span style="color: #707070;font-size: 14px; ">Of Tina Manguikan</span></h3>
-
-            <p class="inspirationp">
-
-                <br>I have been asked “Why? Why are you doing this?" Without hesitation, I say the two words that inspired me – "LIAM REDDY."</br>
-
-                <br>In October 2013, I learned through a Facebook friend about Liam Reddy, a 2-year-old boy in Florida who was fighting a rare form of cancer. Though I had never met Liam or his family, I felt inspired to join the fundraising efforts that the Reddy family's friends were making to help them.</br>
-
-                <br>Once the fundraising efforts for Liam had ended, I found myself thinking about him all the time, and wanting to keep supporting and encouraging him through his treatment and recovery. </br>
-
-                <br>I decided that each month I would send him a care package filled with small toys, activities and, occasionally, sweets. I would send the package at the beginning of each month and then would spend the rest of the month thinking about what I could send the following month. There was something very special about this little boy. His innocent smile and his happy disposition warmed my heart. As months passed, Liam’s mother and I became friends and stayed in contact.</br>
-
-                <br>Over the summer, I read the book, The Promise of a Pencil by Adam Braun. In this book, Adam talked about how an ordinary person could make an extraordinary change. As I continued to read the book, I kept thinking to myself maybe now is the time to start the foundation I have always wanted to start, but always hesitated. Then a note came from Liam's mom, a sweet unexpected note that simply described how the care packages put a smile on his face, and how he and his family could "feel the love" in those small packages.</br>
-
-                <br> It was then I knew I needed to start the foundation. I needed to find a way to reach these children. How many other children out there were struggling with life-threatening illnesses but didn't have this kind of support? Liam's mom made me realize how a simple gift could bring much-needed and meaningful happiness to a child.</br>
-
-                <br>Inspired to do what I could to give back to the community and pay it forward, I decided I would start this foundation to deliver care packages to these brave children.</br>
-
-                <br>So when asked what and who inspires me, I answer "Liam Reddy".</br>
-
-                <br>It is in honor of my little friend that I have started the Reddy2Fight Foundation.</br>
-            </p>
-
+    <header>
+        <div class="logo-wrapper">
+            <a href="index.html"><img title="Reddy2Fight Home" class="logo" src="Branding/NoPath.png"></a>
 
         </div>
 
+        <nav class="nav vivify fadeIn duration-200">
+            <ul>
+                <li class="nav-item"><a href="index.html"><button autofocus>Home</button></a></li>
+             
+                <li class="nav-item" ><a  href="Inspiration.html"><button class="button-active" >Inspiration</button></a></li>
+                <li class="nav-item"><a href="#"><button>Our Team</button></a></li>
+                <li class="nav-item"><a href="#"><button>Care Packages</button></a></li>
+                <li class="nav-item exc3"><a href="#"><button>Contact</button></a></li>
+            </ul>
+
+        </nav>
+        <button class="close-base" onclick="collapse()"></button>
+      <details><summary><button title="Donate with PayPal." class="donate-btn">Donate</button></summary>  <div class="donate-sect " >
+
+        <div class="donate-text" data-aos="fade-up" data-aos-delay="200">
+            <h3>How much would you like to donate?</h3>
+            <img class="paypal-logo" src="Branding/Paypal%20Logo.svg">
+            <p>Note : Your donation goes directly to the creation of care packages and goody bags, and their delivery to hospitals.</p>
+        </div>
+
+        <div class="donate-prices" data-aos="fade-up" data-aos-delay="300"><a href="https://www.paypal.com/donate/?token=tu1bMKdYPbakGbs8qj5_bpPc3TLVANIsGvVYrfCF3D8-TaukDMtA8GWNNbqcWv93T4Nt3m&country.x=US&locale.x=&Z3JncnB0=" target="_blank"><button>Custom</button></a><a href="https://www.paypal.com/donate/?token=wkboScMSu5WZyuW3fasTBHoriU9PuwSd1BrrCR1po6ZfmnIQlGvRt_JfKc3-DaRbY7KgKG&country.x=US&locale.x=" target="_blank"><button>$10</button></a><a href="https://www.paypal.com/donate/?token=hRCBEIQ35yk7KQ7je_PHTJJLok0YaT3zyzgf0hV0TUr8cplcrcEB7FZCFarFfnl6cB19jW&country.x=US&locale.x=" target="_blank"><button>$50</button></a><a href="https://www.paypal.com/donate/?token=hRCBEIQ35yk7KQ7je_PHTJJLok0YaT3zyzgf0hV0TUr8cplcrcEB7FZCFarFfnl6cB19jW&country.x=US&locale.x=" target="_blank"><button>$100</button></a><a href="https://www.paypal.com/donate/?token=PbHRK6xyzCMM5EilLmi8DdeOCudGIMRZMGtjAcy2xRPtdz5KYHpZMn89rmJO_mZdfI7oy0&country.x=US&locale.x=" target="_blank"><button>$250</button></a><a href="https://www.paypal.com/donate/?token=8cM2Ev2fsCnpXgJwG7j9Efdi29gpyfRiejN40tcWKKEmHO1JVjMlV5B8Ol5nIMueDwstKG&country.x=US&locale.x=" target="_blank"><button>$500</button></a></div>
+
+        <div class="donate-policy" data-aos="fade-up" data-aos-delay="400"><button onclick="modalOpen()">View Donors Privacy Policy</button></div>
+    </div></details>
+        <div class="mobile">
+            <button class="menu" onclick="expand()">
+                <i class="material-icons">menu</i>
+            </button>
+
+            <button class="close" onclick="collapse()">
+                <i class="material-icons">close</i>
+            </button>
+        </div>
+
+        <div class="social-icons"><a target="_blank" href="https://twitter.com/reddy2fight"><img title="Twitter" src="IconSet/TwitterLogo.svg"></a><a target="_blank" href="https://www.instagram.com/reddy2fightfoundation/"><img title="Instagram" src="IconSet/InstagramLogo.svg"></a><a target="_blank" href="https://www.facebook.com/reddy2fightfoundation"><img title="Facebook" src="IconSet/FacebookLogo.svg"></a></div>
+    </header>
+   
+	<section class="inspiration"><img data-aos = "fade" src="Images/33027682_2083214738621248_6472413726778589184_n.jpg" class="liam-scale"><div class="inspiration-text"><img class="liam-inline" src="Images/33027682_2083214738621248_6472413726778589184_n.jpg"><h1 data-aos = "fade-up">Inspiration</h1><h3 data-aos = "fade-up">By Tina Manguikan</h3><div class="divider"></div><p data-aos = "fade">I have been asked “Why? Why are you doing this?" Without hesitation, I say the two words that inspired me – "LIAM REDDY."</p>
+
+		<p data-aos = "fadep">
+In October 2013, I learned through a Facebook friend about Liam Reddy, a 2-year-old boy in Florida who was fighting a rare form of cancer. Though I had never met Liam or his family, I felt inspired to join the fundraising efforts that the Reddy family's friends were making to help them.</p>
+
+		<p data-aos = "fade">Once the fundraising efforts for Liam had ended, I found myself thinking about him all the time, and wanting to keep supporting and encouraging him through his treatment and recovery.</p>
+
+<p data-aos = "fade">I decided that each month I would send him a care package filled with small toys, activities and, occasionally, sweets. I would send the package at the beginning of each month and then would spend the rest of the month thinking about what I could send the following month. There was something very special about this little boy. His innocent smile and his happy disposition warmed my heart. As months passed, Liam’s mother and I became friends and stayed in contact.</p>
+
+<p data-aos = "fade">Over the summer, I read the book, The Promise of a Pencil by Adam Braun. In this book, Adam talked about how an ordinary person could make an extraordinary change. As I continued to read the book, I kept thinking to myself maybe now is the time to start the foundation I have always wanted to start, but always hesitated. Then a note came from Liam's mom, a sweet unexpected note that simply described how the care packages put a smile on his face, and how he and his family could "feel the love" in those small packages.</p>
+
+		<p>It was then I knew I needed to start the foundation. I needed to find a way to reach these children. How many other children out there were struggling with life-threatening illnesses but didn't have this kind of support? Liam's mom made me realize how a simple gift could bring much-needed and meaningful happiness to a child.</p>
+
+		<p>Inspired to do what I could to give back to the community and pay it forward, I decided I would start this foundation to deliver care packages to these brave children.</p>
+
+		<p>So when asked what and who inspires me, I answer "Liam Reddy".</p>
 
 
+<p>		
+It is in honor of my little friend that I have started the Reddy2Fight Foundation.</p></div></section>
+	
+   
 
 
-    </div>
-
-
-    <div class="endbase" style="top:407%;"></div>
-
-
-
-
-
-
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
 </body>
+
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
