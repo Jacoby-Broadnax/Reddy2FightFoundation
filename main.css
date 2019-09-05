@@ -220,23 +220,19 @@ video {
 #slideshow > div > img {
     width: 100%;
     object-fit: cover;
-    height: 580px;
+    height: 80vh;
     filter: brightness(0.75)
 }
 
 .slide-text > h2 {
     position: absolute;
-
     z-index: 12;
-
     font-size: 48px;
     font-weight: lighter;
     font-family: roboto, sans-serif;
     color: white;
     font-weight: 450;
     text-align: center;
-    ;
-
     margin-top: -18px;
     width: 904px;
 }
@@ -249,7 +245,7 @@ video {
     color: white;
     font-family: roboto, sans-serif;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 10vh;
     width: 904px;
     font-weight: lighter;
 
@@ -770,7 +766,8 @@ border-radius: 50px;
 
 @media screen and (max-width:1000px) {
     #slideshow > div > img {
-        height: 423px;
+        height: 600px;
+        background-position-x: -400px;
     }
 
     .video-container {
@@ -796,6 +793,7 @@ border-radius: 50px;
         font-size: 20px;
         width: 475px;
         margin-top: 19px;
+        font-weight: lighter;
     }
 
     .slide-text {
